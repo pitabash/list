@@ -1,0 +1,128 @@
+<mvc:View xmlns:core="sap.ui.core"
+    controllerName="list.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content >
+                        <!-- <List headerText="StandardListItem">
+                            <items>
+                                <StandardListItem title="Nokia" 
+                                                  description="Nokia 3.4 Fjord, 4GB RAM, 64GB Storage"
+                                                  icon="photos/nokia.jfif"
+                                                  adaptTitleSize="false"
+                                                  iconDensityAware="false"
+                                                  iconInset="false"
+                                                  info="Available"
+                                                  infoState="Success"
+                                                  infoStateInverted="true"
+                                                  wrapping="false"
+                                                  highlight="Success"
+                                                  type="Active"
+                                                  />
+                                <StandardListItem title="Realme" 
+                                                  description="Realme 7i (Fusion Green, 4GB RAM, 128GB Storage)"
+                                                  icon="photos/realme.jpg"
+                                                  adaptTitleSize="true"
+                                                  iconDensityAware="true"
+                                                  iconInset="true"
+                                                  info="Not Available"
+                                                  infoState="Error"
+                                                  infoStateInverted="true"
+                                                  wrapping="false"
+                                                  highlight="Error"
+                                                  type="Inactive"
+                                                  />
+                            </items>
+                        </List>
+
+                        <List headerText="ObjectListItem">
+                            <items>
+                                <ObjectListItem title="Nokia"
+                                icon="photos/nokia.jfif"
+                                type="Active"
+                                number="12000"
+                                numberUnit="INR"
+                                showMarkers="true"
+                                markFlagged="true"
+                                markFavorite="true"
+                                markLocked="true" >
+
+                                <firstStatus>
+                                    <ObjectStatus text="Available" state="Success"></ObjectStatus>
+                                </firstStatus>
+                                <ObjectAttribute text="250 gm"></ObjectAttribute>
+                                <ObjectAttribute text="14 * 20 * 3 cm"></ObjectAttribute>
+                                </ObjectListItem>
+
+                                <ObjectListItem title="Realme"
+                                icon="photos/realme.jpg"
+                                type="Inactive"
+                                number="15000"
+                                numberUnit="INR">
+
+                                    <firstStatus>
+                                        <ObjectStatus text="Not Available" state="Error"></ObjectStatus>
+                                    </firstStatus>
+                                    <ObjectAttribute text="270 gm"></ObjectAttribute>
+                                    <ObjectAttribute text="15 * 25* 5 cm"></ObjectAttribute>
+
+                                    <markers>
+                                        <ObjectMarker type="Favorite" />
+                                        <ObjectMarker type="Flagged" />
+                                        <ObjectMarker type="Locked" />
+                                    </markers>
+                                </ObjectListItem>
+                            </items>
+                        </List> -->
+
+                        <List headerText="CustomListItem" mode="Delete">
+                            <items>
+                                <CustomListItem >
+                                    <HBox >
+                                        <items>
+                                            <Image src="photos/nokia.jfif" height="60px" width="50px" class="sapUiSmallMarginTopBottom"></Image>
+                                            <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                                                <Label text="Nokia" design="Bold"></Label>
+                                                <Label text="3.4 Fjord"/>
+                                            </VBox>
+                                            
+                                        </items>
+                                    </HBox>
+                                </CustomListItem>
+
+                                <CustomListItem >
+                                    <HBox >
+                                        <items>
+                                            <Image src="photos/realme.jpg" height="70px" width="30px" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom"></Image>
+                                            <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                                                <Label text="Realme" design="Bold"></Label>
+                                                <Label text="7i Black"/>
+                                            </VBox>
+                                            
+                                        </items>
+                                    </HBox>
+                                </CustomListItem>
+                            </items>
+                        </List>
+
+                        <List headerText="DisplayListItem">
+                            <items>
+                                <DisplayListItem label="Nokia" value="13000"></DisplayListItem>
+                                <DisplayListItem label="Realme" value="15000" type="Active" highlight="Success" selected="true"></DisplayListItem>
+                                <DisplayListItem label="Redmi" value="17000"></DisplayListItem>
+                                <DisplayListItem label="Oppo" value="19000" highlight="Error"></DisplayListItem>
+                                <DisplayListItem label="Vivo" value="21000"></DisplayListItem>
+                            </items>
+                        </List>
+
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
